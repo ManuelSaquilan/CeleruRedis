@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Último Mensaje</title>
+</head>
+<body>
+    <h1>Último Mensaje</h1>
+    {% if mensaje %}
+        <p>{{ mensaje.contenido }}</p>
+        <p>Creado: {{ mensaje.fecha_creacion }}</p>
+    {% else %}
+        <p>No hay mensajes aún.</p>
+    {% endif %}
+</body>
+</html>
